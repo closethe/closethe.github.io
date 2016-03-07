@@ -57,31 +57,31 @@
 
 
 
-<meta name="description" content="python抓取豆瓣热门电影开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从豆瓣电影入手吧。1、信息量大。2、不用登陆就可以抓取。
+<meta name="description" content="开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从豆瓣电影入手吧。1、信息量大。2、不用登陆就可以抓取。
 豆瓣电影TOP250用浏览器打开豆瓣电影TOP250页面，按F12开启开发者模式，分析页面结构。
 
 每页有25条电影，共有10页。
 电影列表在页面上的位置为一个class属性为grid_view的ol标签中。
-每条电影信">
+每条电影信息放在这个ol标签的一个li">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python抓取豆瓣热门电影">
 <meta property="og:url" content="http://closethe.github.io/2016/03/07/python抓取豆瓣热门电影-1/index.html">
 <meta property="og:site_name" content="我的GitHub博客">
-<meta property="og:description" content="python抓取豆瓣热门电影开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从豆瓣电影入手吧。1、信息量大。2、不用登陆就可以抓取。
+<meta property="og:description" content="开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从豆瓣电影入手吧。1、信息量大。2、不用登陆就可以抓取。
 豆瓣电影TOP250用浏览器打开豆瓣电影TOP250页面，按F12开启开发者模式，分析页面结构。
 
 每页有25条电影，共有10页。
 电影列表在页面上的位置为一个class属性为grid_view的ol标签中。
-每条电影信">
-<meta property="og:updated_time" content="2016-03-07T06:00:39.215Z">
+每条电影信息放在这个ol标签的一个li">
+<meta property="og:updated_time" content="2016-03-07T06:02:07.471Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python抓取豆瓣热门电影">
-<meta name="twitter:description" content="python抓取豆瓣热门电影开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从豆瓣电影入手吧。1、信息量大。2、不用登陆就可以抓取。
+<meta name="twitter:description" content="开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从豆瓣电影入手吧。1、信息量大。2、不用登陆就可以抓取。
 豆瓣电影TOP250用浏览器打开豆瓣电影TOP250页面，按F12开启开发者模式，分析页面结构。
 
 每页有25条电影，共有10页。
 电影列表在页面上的位置为一个class属性为grid_view的ol标签中。
-每条电影信">
+每条电影信息放在这个ol标签的一个li">
 
 
 
@@ -273,7 +273,7 @@
       
 
       
-        <h1 id="python抓取豆瓣热门电影"><a href="#python抓取豆瓣热门电影" class="headerlink" title="python抓取豆瓣热门电影"></a>python抓取豆瓣热门电影</h1><p>开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从<a href="movie.douban.com">豆瓣电影</a>入手吧。<br>1、信息量大。<br>2、不用登陆就可以抓取。</p>
+        <p>开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从<a href="movie.douban.com">豆瓣电影</a>入手吧。<br>1、信息量大。<br>2、不用登陆就可以抓取。</p>
 <h3 id="豆瓣电影TOP250"><a href="#豆瓣电影TOP250" class="headerlink" title="豆瓣电影TOP250"></a><a href="https://movie.douban.com/top250" target="_blank" rel="external">豆瓣电影TOP250</a></h3><p>用浏览器打开<a href="https://movie.douban.com/top250" target="_blank" rel="external">豆瓣电影TOP250</a>页面，按F12开启开发者模式，分析页面结构。</p>
 <ul>
 <li>每页有25条电影，共有10页。</li>
@@ -433,7 +433,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python抓取豆瓣热门电影"><span class="nav-number">1.</span> <span class="nav-text">python抓取豆瓣热门电影</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#豆瓣电影TOP250"><span class="nav-number">1.0.1.</span> <span class="nav-text">豆瓣电影TOP250</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#热门分类电影"><span class="nav-number">1.0.2.</span> <span class="nav-text">热门分类电影</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取Top250电影源码"><span class="nav-number">1.0.3.</span> <span class="nav-text">获取Top250电影源码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取热门分类电影源码"><span class="nav-number">1.0.4.</span> <span class="nav-text">获取热门分类电影源码</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#豆瓣电影TOP250"><span class="nav-number">1.</span> <span class="nav-text">豆瓣电影TOP250</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#热门分类电影"><span class="nav-number">2.</span> <span class="nav-text">热门分类电影</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取Top250电影源码"><span class="nav-number">3.</span> <span class="nav-text">获取Top250电影源码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取热门分类电影源码"><span class="nav-number">4.</span> <span class="nav-text">获取热门分类电影源码</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
