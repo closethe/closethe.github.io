@@ -57,15 +57,31 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的GitHub博客">
-<meta property="og:url" content="http://closethe.github.io/index.html">
+<meta name="description" content="python抓取豆瓣热门电影开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从豆瓣电影入手吧。1、信息量大。2、不用登陆就可以抓取。
+豆瓣电影TOP250用浏览器打开豆瓣电影TOP250页面，按F12开启开发者模式，分析页面结构。
+
+每页有25条电影，共有10页。
+电影列表在页面上的位置为一个class属性为grid_view的ol标签中。
+每条电影信">
+<meta property="og:type" content="article">
+<meta property="og:title" content="study python get douban movie top250">
+<meta property="og:url" content="http://closethe.github.io/2016/03/07/study-python-get-douban-movie-top250/index.html">
 <meta property="og:site_name" content="我的GitHub博客">
-<meta property="og:description">
+<meta property="og:description" content="python抓取豆瓣热门电影开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从豆瓣电影入手吧。1、信息量大。2、不用登陆就可以抓取。
+豆瓣电影TOP250用浏览器打开豆瓣电影TOP250页面，按F12开启开发者模式，分析页面结构。
+
+每页有25条电影，共有10页。
+电影列表在页面上的位置为一个class属性为grid_view的ol标签中。
+每条电影信">
+<meta property="og:updated_time" content="2016-03-07T05:53:24.080Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的GitHub博客">
-<meta name="twitter:description">
+<meta name="twitter:title" content="study python get douban movie top250">
+<meta name="twitter:description" content="python抓取豆瓣热门电影开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从豆瓣电影入手吧。1、信息量大。2、不用登陆就可以抓取。
+豆瓣电影TOP250用浏览器打开豆瓣电影TOP250页面，按F12开启开发者模式，分析页面结构。
+
+每页有25条电影，共有10页。
+电影列表在页面上的位置为一个class属性为grid_view的ol标签中。
+每条电影信">
 
 
 
@@ -83,7 +99,7 @@
   };
 </script>
 
-  <title> 我的GitHub博客 </title>
+  <title> study python get douban movie top250 | 我的GitHub博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -112,9 +128,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -191,9 +205,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -213,10 +227,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/03/07/study-python-get-douban-movie-top250/" itemprop="url">
-                  study python get douban movie top250
-                </a>
+                study python get douban movie top250
               
             
           </h1>
@@ -262,9 +273,7 @@
       
 
       
-        
-          
-            <h1 id="python抓取豆瓣热门电影"><a href="#python抓取豆瓣热门电影" class="headerlink" title="python抓取豆瓣热门电影"></a>python抓取豆瓣热门电影</h1><p>开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从<a href="movie.douban.com">豆瓣电影</a>入手吧。<br>1、信息量大。<br>2、不用登陆就可以抓取。</p>
+        <h1 id="python抓取豆瓣热门电影"><a href="#python抓取豆瓣热门电影" class="headerlink" title="python抓取豆瓣热门电影"></a>python抓取豆瓣热门电影</h1><p>开始学习爬虫了，虽然很久一年前就断断续续开始看了，但一直没正式写过爬虫代码。今天开始实战！首先从<a href="movie.douban.com">豆瓣电影</a>入手吧。<br>1、信息量大。<br>2、不用登陆就可以抓取。</p>
 <h3 id="豆瓣电影TOP250"><a href="#豆瓣电影TOP250" class="headerlink" title="豆瓣电影TOP250"></a><a href="https://movie.douban.com/top250" target="_blank" rel="external">豆瓣电影TOP250</a></h3><p>用浏览器打开<a href="https://movie.douban.com/top250" target="_blank" rel="external">豆瓣电影TOP250</a>页面，按F12开启开发者模式，分析页面结构。</p>
 <ul>
 <li>每页有25条电影，共有10页。</li>
@@ -294,12 +303,12 @@
 <p>通过以上分析得知，如果我们获取[纪录片]类型的前100名，请求如下：<br><a href="https://movie.douban.com/j/chart/top_list?type=1&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100" target="_blank" rel="external">https://movie.douban.com/j/chart/top_list?type=1&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100</a> 。</p>
 <h3 id="获取Top250电影源码"><a href="#获取Top250电影源码" class="headerlink" title="获取Top250电影源码"></a>获取Top250电影源码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> codecs</span><br><span class="line"></span><br><span class="line">DOWNLOAD_URL = <span class="string">'http://movie.douban.com/top250'</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download_page</span><span class="params">(url)</span>:</span></span><br><span class="line">    data = requests.get(url).content</span><br><span class="line">    <span class="keyword">return</span> data</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getDoubanMovieT250</span><span class="params">()</span>:</span></span><br><span class="line">    url = DOWNLOAD_URL</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">with</span> codecs.open(<span class="string">'movie'</span>,<span class="string">'wb'</span>,encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> fp:</span><br><span class="line">        <span class="keyword">while</span> url:</span><br><span class="line">            html = download_page(url)</span><br><span class="line">            movies,url = parse_html(html)</span><br><span class="line">            fp.write(<span class="string">u'&#123;movies&#125;\n'</span>.format(movies=<span class="string">'\n'</span>.join(movies)))</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse_html</span><span class="params">(html)</span>:</span></span><br><span class="line">    movie_name_list = []</span><br><span class="line">    soup = BeautifulSoup(html,<span class="string">"html.parser"</span>)</span><br><span class="line">    movie_list_soup = soup.find(<span class="string">'ol'</span>,attrs=&#123;<span class="string">'class'</span>:<span class="string">'grid_view'</span>&#125;)</span><br><span class="line">    <span class="keyword">print</span> movie_list_soup.prettify().encode(<span class="string">'utf-8'</span>)</span><br><span class="line">    <span class="keyword">for</span> movie_li <span class="keyword">in</span> movie_list_soup.find_all(<span class="string">'li'</span>):</span><br><span class="line">        detail = movie_li.find(<span class="string">'div'</span>,attrs=&#123;<span class="string">'class'</span>:<span class="string">'hd'</span>&#125;)</span><br><span class="line">        movie_name = detail.find(<span class="string">'span'</span>,attrs=&#123;<span class="string">'class'</span>:<span class="string">'title'</span>&#125;).getText()</span><br><span class="line">        movie_name_list.append(movie_name)</span><br><span class="line">        </span><br><span class="line">    next_page = soup.find(<span class="string">'span'</span>, attrs=&#123;<span class="string">'class'</span>: <span class="string">'next'</span>&#125;).find(<span class="string">'a'</span>)</span><br><span class="line">    <span class="keyword">if</span> next_page:</span><br><span class="line">        <span class="keyword">return</span> movie_name_list, DOWNLOAD_URL + next_page[<span class="string">'href'</span>]</span><br><span class="line">    <span class="keyword">return</span> movie_name_list, <span class="keyword">None</span></span><br><span class="line">        </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    getDoubanMovieT250()</span><br></pre></td></tr></table></figure>
 <h3 id="获取热门分类电影源码"><a href="#获取热门分类电影源码" class="headerlink" title="获取热门分类电影源码"></a>获取热门分类电影源码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># encoding=utf-8</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> codecs</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line">DOWNLOAD_URL = &#123;</span><br><span class="line">                <span class="string">u'纪录片'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=1&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'传记'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=2&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'犯罪'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=3&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'历史'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=4&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'动作'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=5&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'情色'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=6&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'歌舞'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=7&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'儿童'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=8&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'悬疑'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=10&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'剧情'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=11&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'灾难'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=12&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'爱情'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=13&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'音乐'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=14&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'冒险'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=15&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'奇幻'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=16&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'科幻'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=17&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'运动'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=18&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'惊悚'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=19&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'恐怖'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=20&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'战争'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=22&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'短片'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=23&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'喜剧'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=24&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'动画'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=25&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'同性'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=26&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'西部'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=27&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'家庭'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=28&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'武侠'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=29&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'古装'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=30&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span>,</span><br><span class="line">                <span class="string">u'黑色电影'</span>:<span class="string">u'https://movie.douban.com/j/chart/top_list?type=31&amp;interval_id=100:90&amp;action=&amp;start=0&amp;limit=100'</span></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">download_page</span><span class="params">(url)</span>:</span></span><br><span class="line">    data = requests.get(url).content</span><br><span class="line">    <span class="keyword">return</span> data</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getDoubanMovieT250</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">for</span> title <span class="keyword">in</span> DOWNLOAD_URL.keys():</span><br><span class="line">        url = DOWNLOAD_URL[title]</span><br><span class="line">        filename = title+<span class="string">'.txt'</span></span><br><span class="line">        <span class="keyword">with</span> codecs.open(filename,<span class="string">'wb'</span>,encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> fp:</span><br><span class="line">            <span class="keyword">while</span> url:</span><br><span class="line">                html = download_page(url)</span><br><span class="line">                movies,url = parse_html(html)</span><br><span class="line">                <span class="keyword">for</span> movie <span class="keyword">in</span> movies:</span><br><span class="line">                    fp.write(<span class="string">u'&#123;movies_title&#125; &#123;movies_url&#125;\n'</span>.format(movies_title=movie[<span class="string">'title'</span>],movies_url=movie[<span class="string">'url'</span>]))</span><br><span class="line">                <span class="comment">#fp.write(html.decode('utf-8'))</span></span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse_html</span><span class="params">(html)</span>:</span></span><br><span class="line">    movie_name_list = []</span><br><span class="line">    json_data = json.loads(html)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> movie_list <span class="keyword">in</span> json_data:</span><br><span class="line">        movie_name = &#123;<span class="string">'title'</span>:movie_list[<span class="string">'title'</span>],</span><br><span class="line">                        <span class="string">'url'</span>:movie_list[<span class="string">'url'</span>]&#125;</span><br><span class="line">        movie_name_list.append(movie_name)</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">return</span> movie_name_list,<span class="keyword">None</span></span><br><span class="line"></span><br><span class="line">        </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    getDoubanMovieT250()</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
 
     <div>
+      
+        
       
     </div>
 
@@ -307,225 +316,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/07/how-to-build-hexo-on-github/" rel="next" title="how to build hexo on github">
+                <i class="fa fa-chevron-left"></i> how to build hexo on github
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/03/07/how-to-build-hexo-on-github/" itemprop="url">
-                  how to build hexo on github
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-07T11:09:02+08:00" content="2016-03-07">
-              2016-03-07
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/07/how-to-build-hexo-on-github/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/07/how-to-build-hexo-on-github/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>  目标：使用Hexo生成静态文件，上传GitHub作为博客。</p>
-<h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><h3 id="下载安装node-js"><a href="#下载安装node-js" class="headerlink" title="下载安装node.js"></a>下载安装node.js</h3><p>  到<a href="https://nodejs.org" target="_blank" rel="external">Node.js</a>官网<a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载</a>相应平台的最新版本，一路安装即可。</p>
-<h3 id="下载安装Git，创建GitHub账号，上传SSH-KEY。"><a href="#下载安装Git，创建GitHub账号，上传SSH-KEY。" class="headerlink" title="下载安装Git，创建GitHub账号，上传SSH-KEY。"></a>下载安装Git，创建GitHub账号，上传SSH-KEY。</h3><p>  具体内容参考<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">此博客</a>。<br>  注意: GitHub新建仓库名：github账号.github.io<br>        博客访问地址： <a href="http://github账号.github.io" target="_blank" rel="external">http://github账号.github.io</a></p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line">$ npm install --unsafe-perm --verbose -g hexo //安装在 \Users\用户名\AppData\Roaming\npm\node_modules目录下</span><br></pre></td></tr></table></figure>
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><h3 id="生成博客文件"><a href="#生成博客文件" class="headerlink" title="生成博客文件"></a>生成博客文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init MyB<span class="built_in">log</span></span><br><span class="line">$ <span class="built_in">cd</span> MyB<span class="built_in">log</span></span><br><span class="line">$ hexo generate //生成静态页面</span><br></pre></td></tr></table></figure>
-<h3 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h3><p>  执行如下命令，启动本地服务，预览文章。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-<p>  在浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>就可以看到效果。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/07/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-07T09:56:48+08:00" content="2016-03-07">
-              2016-03-07
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/07/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/07/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -533,6 +349,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/07/study-python-get-douban-movie-top250/"
+           data-title="study python get douban movie top250" data-url="http://closethe.github.io/2016/03/07/study-python-get-douban-movie-top250/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -552,8 +376,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars0.githubusercontent.com/u/8065436?v=3&u=7d0f2353e09344c8fd8c80123fc1b8e1764f7e9c&s=140"
@@ -590,6 +423,23 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python抓取豆瓣热门电影"><span class="nav-number">1.</span> <span class="nav-text">python抓取豆瓣热门电影</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#豆瓣电影TOP250"><span class="nav-number">1.0.1.</span> <span class="nav-text">豆瓣电影TOP250</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#热门分类电影"><span class="nav-number">1.0.2.</span> <span class="nav-text">热门分类电影</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取Top250电影源码"><span class="nav-number">1.0.3.</span> <span class="nav-text">获取Top250电影源码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取热门分类电影源码"><span class="nav-number">1.0.4.</span> <span class="nav-text">获取热门分类电影源码</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -674,6 +524,167 @@
   
 
   
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.scheme !== 'Pisces' && (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always')) {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   
 
