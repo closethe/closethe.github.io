@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lXTUYHrdlYDdOUBkx23wPrhgx4xd3GAj"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+    <title>微博地理信息数据分析</title>
+    <style type="text/css">
+		ul,li{list-style: none;margin:0;padding:0;float:left;}
+		html{height:100%}
+		body{height:100%;margin:0px;padding:0px;font-family:"微软雅黑";}
+    .STYLE2 {color: #CCCCCC}
+	.btn{
+		  display: inline-block;
+		  vertical-align: top;
+		  padding: 2px 4px 3px;
+		  margin-top: 1px;
+		  margin-bottom: 5px;
+		  border: 1px solid;
+		  color: #222;
+		  background-color:#cccccc;
+		  border-radius: 9px;
+		  font-size: 15px;
+		  font-weight: 300;
+		  text-decoration: none;
+	}
+	.btn:hover {
+		  border-bottom-width: 4px;
+		  margin-bottom: 3px;
+	}
+	.btn:active{
+		background:-webkit-linear-gradient(270deg,rgb(204,204,204),rgb(85,85,85))
+	}
+    </style>	
+</head>
+<body style="cursor: auto; background-color: rgb(85, 85, 85);" class="">
+
+	<div style="width: 616px;margin:auto">
+		<h1 align="center" class="STYLE2">微博地理信息数据分析</h1>
+	</div>
+	<div id="container" style="height:80%;width:70%;margin:auto">wojius map </div>
+	
+	<table width="80%" border="0" style="margin:20px auto auto auto;">
+	<tr>
+		<td><div align="center" class="STYLE2">总览</div></td>
+		<td>
+			<div id="r-result" style="width:100%">
+				<input type="button"  class="btn" onclick="showHeatmap(100);" value="显示it热力图"/>
+        		<input type="button"  class="btn" onclick="showHeatmap(101);" value="显示lvyou热力图"/>
+			</div>
+		</td>
+	  </tr>
+	  <tr>
+		<td><div align="center" class="STYLE2">热门用户</div></td>
+		<td>
+			<div id="r-result" style="width:100%">
+				<input type="button"  class="btn" onclick="showHeatmap(200);" value="显示user1热力图"/>
+				<input type="button"  class="btn" onclick="showHeatmap(201);" value="显示user2热力图"/>
+				<input type="button"  class="btn" onclick="showHeatmap(202);" value="显示user3热力图"/>
+			</div>
+		</td>
+	  </tr>
+	  <tr>
+		<td><div align="center" class="STYLE2">旅游类按月统计</div></td>
+		<td>
+			<div id="r-result" style="width:100%">
+				  <input type="button"  class="btn" onclick="showHeatmap(301);" value="显示1月份热力图"/>
+				  <input type="button"  class="btn" onclick="showHeatmap(302);" value="显示2月份热力图"/>
+				  <input type="button"  class="btn" onclick="showHeatmap(303);" value="显示3月份热力图"/>
+				  <input type="button"  class="btn" onclick="showHeatmap(304);" value="显示4月份热力图"/>
+				  <input type="button"  class="btn" onclick="showHeatmap(305);" value="显示5月份热力图"/>
+				  <input type="button"  class="btn" onclick="showHeatmap(306);" value="显示6月份热力图"/>
+				  <br>
+				  <input type="button"  class="btn" onclick="showHeatmap(307);" value="显示7月份热力图"/>
+				  <input type="button"  class="btn" onclick="showHeatmap(308);" value="显示8月份热力图"/>
+				  <input type="button"  class="btn" onclick="showHeatmap(309);" value="显示9月份热力图"/>
+				  <input type="button"  class="btn" onclick="showHeatmap(310);" value="显示10月份热力图"/>
+				  <input type="button"  class="btn" onclick="showHeatmap(311);" value="显示11月份热力图"/>
+				  <input type="button"  class="btn" onclick="showHeatmap(312);" value="显示12月份热力图"/>
+			</div>
+		</td>
+	  </tr>
+	</table>
+
+
+		
+
+	
+
+</body>
+</html>
+ <script type="text/javascript" src="dateout..js"></script>
+ 
+<script type="text/javascript">
+    var map = new BMap.Map("container");          // 创建地图实例
+
+    var point = new BMap.Point(116.418261, 39.921984);
+    map.centerAndZoom(point, 11);             // 初始化地图，设置中心点坐标和地图级别
+    map.enableScrollWheelZoom(); // 允许滚轮缩放   
+    if(!isSupportCanvas()){
+    	alert('热力图目前只支持有canvas支持的浏览器,您所使用的浏览器不能使用热力图功能~')
+    }
+
+	heatmapOverlay = new BMapLib.HeatmapOverlay({"radius":30});
+	map.addOverlay(heatmapOverlay);
+	
+	//是否显示热力图
+	function showHeatmap(choice){
+		/*
+			kind 100
+			it		100
+			lvyou	101
+			
+			user 200
+			user1	200
+			user2	201
+			user3	202
+			
+			month 300
+			jan		301
+			feb		302
+			..
+			
+		*/
+		switch(choice){
+			case 100:
+				points = heatmapData_it;
+				break;
+			case 101:
+				points = heatmapData_lvyou;
+				break;
+				
+			case 200:
+				points = heatmapData_user1;
+				break;
+			case 201:
+				points = heatmapData_user2;
+				break;
+			case 202:
+				points = heatmapData_user3;
+				break;
+				
+			case 301:
+				points = heatmapData_1;
+				break;
+			case 302:
+				points = heatmapData_2;
+				break;
+			case 303:
+				points = heatmapData_3;
+				break;
+			case 304:
+				points = heatmapData_4;
+				break;
+			case 305:
+				points = heatmapData_5;
+				break;
+			case 306:
+				points = heatmapData_6;
+				break;
+			case 307:
+				points = heatmapData_7;
+				break;
+			case 308:
+				points = heatmapData_8;
+				break;
+			case 309:
+				points = heatmapData_9;
+				break;
+			case 310:
+				points = heatmapData_10;
+				break;
+			case 311:
+				points = heatmapData_11;
+				break;
+			case 312:
+				points = heatmapData_12;
+				break;
+		}
+		heatmapOverlay.setDataSet({data:points,max:5});
+        heatmapOverlay.show();
+	}
+	
+	function closeHeatmap(){
+        heatmapOverlay.hide();
+    }
+	showHeatmap(100);
+    function setGradient(){
+     	/*格式如下所示:
+		{
+	  		0:'rgb(102, 255, 0)',
+	 	 	.5:'rgb(255, 170, 0)',
+		  	1:'rgb(255, 0, 0)'
+		}*/
+     	var gradient = {};
+     	var colors = document.querySelectorAll("input[type='color']");
+     	colors = [].slice.call(colors,0);
+     	colors.forEach(function(ele){
+			gradient[ele.getAttribute("data-key")] = ele.value; 
+     	});
+        heatmapOverlay.setOptions({"gradient":gradient});
+    }
+	//判断浏览区是否支持canvas
+    function isSupportCanvas(){
+        var elem = document.createElement('canvas');
+        return !!(elem.getContext && elem.getContext('2d'));
+    }
+</script>
