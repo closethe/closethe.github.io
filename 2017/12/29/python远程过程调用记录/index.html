@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="xmlrpc jsonrpc web2py," />
+  <meta name="keywords" content="xmlrpc,jsonrpc,web2py," />
 
 
 
@@ -57,28 +57,40 @@
 
 
 
-<meta name="description" content="需求现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。123A服务器-&amp;gt;B服务器: 刚刚采集到新鲜热乎的数据一份！Note right of B服务器: 尝一口，扔冰箱里B服务器--&amp;gt;A服务器: 不错！是挺新鲜的！
+<meta name="description" content="需求
+现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。
+&amp;lt;div id=&amp;quot;sequence-0&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sequence-1&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 方案
 
+
 方案一、A服务器采集数据后，按照B的需求进行加工处理，扔进B的数据库中。
-方案二、A调用B的处理过程，B处理">
+方">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python远程过程调用记录">
 <meta property="og:url" content="http://closethe.github.io/2017/12/29/python远程过程调用记录/index.html">
 <meta property="og:site_name" content="一片荒芜">
-<meta property="og:description" content="需求现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。123A服务器-&amp;gt;B服务器: 刚刚采集到新鲜热乎的数据一份！Note right of B服务器: 尝一口，扔冰箱里B服务器--&amp;gt;A服务器: 不错！是挺新鲜的！
+<meta property="og:description" content="需求
+现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。
+&amp;lt;div id=&amp;quot;sequence-0&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sequence-1&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 方案
 
+
 方案一、A服务器采集数据后，按照B的需求进行加工处理，扔进B的数据库中。
-方案二、A调用B的处理过程，B处理">
-<meta property="og:updated_time" content="2017-12-29T04:17:41.211Z">
+方">
+<meta property="og:updated_time" content="2017-12-29T06:17:21.260Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python远程过程调用记录">
-<meta name="twitter:description" content="需求现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。123A服务器-&amp;gt;B服务器: 刚刚采集到新鲜热乎的数据一份！Note right of B服务器: 尝一口，扔冰箱里B服务器--&amp;gt;A服务器: 不错！是挺新鲜的！
+<meta name="twitter:description" content="需求
+现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。
+&amp;lt;div id=&amp;quot;sequence-0&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sequence-1&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 方案
 
+
 方案一、A服务器采集数据后，按照B的需求进行加工处理，扔进B的数据库中。
-方案二、A调用B的处理过程，B处理">
+方">
 
 
 
@@ -270,8 +282,12 @@
       
 
       
-        <h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A服务器-&gt;B服务器: 刚刚采集到新鲜热乎的数据一份！</span><br><span class="line">Note right of B服务器: 尝一口，扔冰箱里</span><br><span class="line">B服务器--&gt;A服务器: 不错！是挺新鲜的！</span><br></pre></td></tr></table></figure></p>
-<h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><blockquote>
+        <h2>需求</h2>
+<p>现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。</p>
+<p>&lt;div id=&quot;sequence-0&quot;&gt;&lt;/div&gt;</p>
+<p>&lt;div id=&quot;sequence-1&quot;&gt;&lt;/div&gt;</p>
+<h2>方案</h2>
+<blockquote>
 <ul>
 <li>方案一、A服务器采集数据后，按照B的需求进行加工处理，扔进B的数据库中。</li>
 <li>方案二、A调用B的处理过程，B处理完后存入数据库。这就是远程过程调用(RPC)。</li>
@@ -285,13 +301,33 @@
 <li>二、A服务器作为调用方，如何调用B所提供的服务？</li>
 </ul>
 </blockquote>
-<h2 id="web2py解决方案"><a href="#web2py解决方案" class="headerlink" title="web2py解决方案"></a>web2py解决方案</h2><h3 id="一、服务器解决方案"><a href="#一、服务器解决方案" class="headerlink" title="一、服务器解决方案"></a>一、服务器解决方案</h3><p>B服务器采用python的web2py作为web服务器框架，在官网我们找到了RPC相关的文档说明，框架提供了多种<a href="http://web2py.com/books/default/chapter/29/10/services#Remote-procedure-calls" target="_blank" rel="external">RPC协议的支持</a>。XMLRPC、JSONRPC、AMFRPC、SOAP等，权衡一下，选择了<a href="http://web2py.com/books/default/chapter/29/10/services#XMLRPC" target="_blank" rel="external">xmlrpc</a>在调用时不需要再引入第三方库，使用会更方便。<br>web2py采用了典型的mvc框架，项目里controls目录下对应了所以页面请求的处理函数。修改对应的control文件并添加下面的代码。例：default.py。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@service.xmlrpc</span></span><br><span class="line"><span class="comment">#RPC服务测试函数 ，注：每一个提供服务的函数需要加上@service.xmlrpc作为修饰符</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line">    </span><br><span class="line"><span class="comment">#开启RPC服务接口</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">call</span><span class="params">()</span>:</span></span><br><span class="line">    session.forget()</span><br><span class="line">    <span class="keyword">return</span> service()</span><br></pre></td></tr></table></figure></p>
-<p>主要工作分两步，1、添加call函数，开启RPC服务支持。2、为提供RPC服务的函数增加@service.xmlrpc修饰符。<br>就是这么简单，服务器端的配置就结束了，这里B服务器开启了add服务，将传入的两个参数相加并返回。</p>
-<h3 id="二、客户端解决方案"><a href="#二、客户端解决方案" class="headerlink" title="二、客户端解决方案"></a>二、客户端解决方案</h3><p>工作很简单，引入xmlrpclib包里的ServerProxy类，传入B服务器的url进行初始化，之后按照对象的方式进行调用。下面是客户端的测试代码。<a href="http://127.0.0.1:8000/app/default/call/xmlrpc是B服务器的网络链接地址。" target="_blank" rel="external">http://127.0.0.1:8000/app/default/call/xmlrpc是B服务器的网络链接地址。</a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> xmlrpclib <span class="keyword">import</span> ServerProxy</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>server = ServerProxy(</span><br><span class="line">       <span class="string">'http://127.0.0.1:8000/app/default/call/xmlrpc'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> server.add(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> server.add(<span class="string">'hello'</span>,<span class="string">'world'</span>)</span><br><span class="line"><span class="string">'helloworld'</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="通用python网络服务解决方案"><a href="#通用python网络服务解决方案" class="headerlink" title="通用python网络服务解决方案"></a>通用python网络服务解决方案</h2><p>web2py作为web服务框架，对基于http协议实现的rpc服务具有天然的优势，服务器不需要再开启其他的网络服务。然而其他提供没有采用web2py框架的服务器该如何提供RPC服务呢。<br>最近的开发工作中，我们也遇到了这样的问题。此时的B服务器不是web服务器。</p>
-<h3 id="一、服务器解决方案-1"><a href="#一、服务器解决方案-1" class="headerlink" title="一、服务器解决方案"></a>一、服务器解决方案</h3><p>考虑到之前采用了xmlrpc实现远程过程调用，具有了一定的经验，功能上也满足了我们的需求，所以采用搭建xmlrpc服务的方式进行。<br>在B服务器中添加下面的代码，使用多进程的方式，开启xmlrpc服务器，并绑定到服务器的8088端口。<br>这里也是提供了add函数作为服务，并返回两个参数相加的接口。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_xmlrpcserver</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">from</span> SimpleXMLRPCServer <span class="keyword">import</span> SimpleXMLRPCServer</span><br><span class="line">    <span class="keyword">from</span> SocketServer <span class="keyword">import</span> ThreadingMixIn</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">ThreadXMLRPCServer</span><span class="params">(ThreadingMixIn, SimpleXMLRPCServer)</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">MyObject</span>:</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(self,a,b)</span>:</span></span><br><span class="line">            <span class="keyword">return</span> a+b</span><br><span class="line"></span><br><span class="line">    obj = MyObject()</span><br><span class="line">    server = ThreadXMLRPCServer((<span class="string">"localhost"</span>, <span class="number">8088</span>), allow_none=<span class="keyword">True</span>)</span><br><span class="line">    server.register_instance(obj)</span><br><span class="line">    server.serve_forever()</span><br><span class="line"><span class="comment"># 开启服务器进程</span></span><br><span class="line">Process(target=run_xmlrpcserver, args=tuple([ ])).start()</span><br></pre></td></tr></table></figure></p>
-<h3 id="二、客户端解决方案-1"><a href="#二、客户端解决方案-1" class="headerlink" title="二、客户端解决方案"></a>二、客户端解决方案</h3><p>这里的代码与web2py解决方案中的一致，注意修改下服务的url即可，具体测试代码如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>server = xmlrpclib.ServerProxy(<span class="string">"http://localhost:8088"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>words = server.add(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>words</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>最近记性越来越差了，以后要多记录写才好。</p>
+<h2>web2py解决方案</h2>
+<h3>一、服务器解决方案</h3>
+<p>B服务器采用python的web2py作为web服务器框架，在官网我们找到了RPC相关的文档说明，框架提供了多种<a href="http://web2py.com/books/default/chapter/29/10/services#Remote-procedure-calls" target="_blank" rel="external">RPC协议的支持</a>。XMLRPC、JSONRPC、AMFRPC、SOAP等，权衡一下，选择了<a href="http://web2py.com/books/default/chapter/29/10/services#XMLRPC" target="_blank" rel="external">xmlrpc</a>在调用时不需要再引入第三方库，使用会更方便。
+web2py采用了典型的mvc框架，项目里controls目录下对应了所以页面请求的处理函数。修改对应的control文件并添加下面的代码。例：default.py。
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@service.xmlrpc</span></span><br><span class="line"><span class="comment">#RPC服务测试函数 ，注：每一个提供服务的函数需要加上@service.xmlrpc作为修饰符</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line">    </span><br><span class="line"><span class="comment">#开启RPC服务接口</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">call</span><span class="params">()</span>:</span></span><br><span class="line">    session.forget()</span><br><span class="line">    <span class="keyword">return</span> service()</span><br></pre></td></tr></table></figure></p>
+<p>主要工作分两步，1、添加call函数，开启RPC服务支持。2、为提供RPC服务的函数增加@service.xmlrpc修饰符。
+就是这么简单，服务器端的配置就结束了，这里B服务器开启了add服务，将传入的两个参数相加并返回。</p>
+<h3>二、客户端解决方案</h3>
+<p>工作很简单，引入xmlrpclib包里的ServerProxy类，传入B服务器的url进行初始化，之后按照对象的方式进行调用。下面是客户端的测试代码。http://127.0.0.1:8000/app/default/call/xmlrpc是B服务器的网络链接地址。
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> xmlrpclib <span class="keyword">import</span> ServerProxy</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>server = ServerProxy(</span><br><span class="line">       <span class="string">'http://127.0.0.1:8000/app/default/call/xmlrpc'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> server.add(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> server.add(<span class="string">'hello'</span>,<span class="string">'world'</span>)</span><br><span class="line"><span class="string">'helloworld'</span></span><br></pre></td></tr></table></figure></p>
+<h2>通用python网络服务解决方案</h2>
+<p>web2py作为web服务框架，对基于http协议实现的rpc服务具有天然的优势，服务器不需要再开启其他的网络服务。然而其他提供没有采用web2py框架的服务器该如何提供RPC服务呢。
+最近的开发工作中，我们也遇到了这样的问题。此时的B服务器不是web服务器。</p>
+<h3>一、服务器解决方案</h3>
+<p>考虑到之前采用了xmlrpc实现远程过程调用，具有了一定的经验，功能上也满足了我们的需求，所以采用搭建xmlrpc服务的方式进行。
+在B服务器中添加下面的代码，使用多进程的方式，开启xmlrpc服务器，并绑定到服务器的8088端口。
+这里也是提供了add函数作为服务，并返回两个参数相加的接口。
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_xmlrpcserver</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">from</span> SimpleXMLRPCServer <span class="keyword">import</span> SimpleXMLRPCServer</span><br><span class="line">    <span class="keyword">from</span> SocketServer <span class="keyword">import</span> ThreadingMixIn</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">ThreadXMLRPCServer</span><span class="params">(ThreadingMixIn, SimpleXMLRPCServer)</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">MyObject</span>:</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(self,a,b)</span>:</span></span><br><span class="line">            <span class="keyword">return</span> a+b</span><br><span class="line"></span><br><span class="line">    obj = MyObject()</span><br><span class="line">    server = ThreadXMLRPCServer((<span class="string">"localhost"</span>, <span class="number">8088</span>), allow_none=<span class="keyword">True</span>)</span><br><span class="line">    server.register_instance(obj)</span><br><span class="line">    server.serve_forever()</span><br><span class="line"><span class="comment"># 开启服务器进程</span></span><br><span class="line">Process(target=run_xmlrpcserver, args=tuple([ ])).start()</span><br></pre></td></tr></table></figure></p>
+<h3>二、客户端解决方案</h3>
+<p>这里的代码与web2py解决方案中的一致，注意修改下服务的url即可，具体测试代码如下：
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>server = xmlrpclib.ServerProxy(<span class="string">"http://localhost:8088"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>words = server.add(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>words</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure></p>
+<h2>总结</h2>
+<p>最近记性越来越差了，以后要多记录写才好。&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js&quot;&gt;&lt;/script&gt;<textarea id="sequence-0-code" style="display: none">A服务器->B服务器: 刚刚采集到新鲜热乎的数据一份！
+Note right of B服务器: 尝一口，扔冰箱里
+B服务器-->A服务器: 不错！是挺新鲜的！</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script><textarea id="sequence-1-code" style="display: none">Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-1-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-1-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-1-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-1", options);</script></p>
 
       
     </div>
@@ -306,7 +342,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/xmlrpc-jsonrpc-web2py/" rel="tag">#xmlrpc jsonrpc web2py</a>
+            <a href="/tags/xmlrpc/" rel="tag">#xmlrpc</a>
+          
+            <a href="/tags/jsonrpc/" rel="tag">#jsonrpc</a>
+          
+            <a href="/tags/web2py/" rel="tag">#web2py</a>
           
         </div>
       
@@ -403,7 +443,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -436,7 +476,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方案"><span class="nav-number">2.</span> <span class="nav-text">方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web2py解决方案"><span class="nav-number">3.</span> <span class="nav-text">web2py解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、服务器解决方案"><span class="nav-number">3.1.</span> <span class="nav-text">一、服务器解决方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、客户端解决方案"><span class="nav-number">3.2.</span> <span class="nav-text">二、客户端解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通用python网络服务解决方案"><span class="nav-number">4.</span> <span class="nav-text">通用python网络服务解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、服务器解决方案-1"><span class="nav-number">4.1.</span> <span class="nav-text">一、服务器解决方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、客户端解决方案-1"><span class="nav-number">4.2.</span> <span class="nav-text">二、客户端解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">web2py解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">一、服务器解决方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">二、客户端解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">通用python网络服务解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.1.</span> <span class="nav-text">一、服务器解决方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.2.</span> <span class="nav-text">二、客户端解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

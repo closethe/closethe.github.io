@@ -58,24 +58,42 @@
 
 
 <meta name="description" content="目标：使用Hexo生成静态文件，上传GitHub作为博客。
-搭建环境下载安装node.js  到Node.js官网下载相应平台的最新版本，一路安装即可。
-下载安装Git，创建GitHub账号，上传SSH-KEY。  具体内容参考此博客。  注意: GitHub新建仓库名：github账号.github.io        博客访问地址： http://github账号.github.io
-安装">
+搭建环境
+下载安装node.js
+到Node.js官网下载相应平台的最新版本，一路安装即可。
+下载安装Git，创建GitHub账号，上传SSH-KEY。
+具体内容参考此博客。
+注意: GitHub新建仓库名：github账号.github.io
+博客访问地址： http://github账号.github.io
+安装Hexo
+12$ gi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub上使用Hexo建立博客">
 <meta property="og:url" content="http://closethe.github.io/2016/03/07/GitHub上使用Hexo建立博客/index.html">
 <meta property="og:site_name" content="一片荒芜">
 <meta property="og:description" content="目标：使用Hexo生成静态文件，上传GitHub作为博客。
-搭建环境下载安装node.js  到Node.js官网下载相应平台的最新版本，一路安装即可。
-下载安装Git，创建GitHub账号，上传SSH-KEY。  具体内容参考此博客。  注意: GitHub新建仓库名：github账号.github.io        博客访问地址： http://github账号.github.io
-安装">
+搭建环境
+下载安装node.js
+到Node.js官网下载相应平台的最新版本，一路安装即可。
+下载安装Git，创建GitHub账号，上传SSH-KEY。
+具体内容参考此博客。
+注意: GitHub新建仓库名：github账号.github.io
+博客访问地址： http://github账号.github.io
+安装Hexo
+12$ gi">
 <meta property="og:updated_time" content="2016-03-07T06:00:37.519Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub上使用Hexo建立博客">
 <meta name="twitter:description" content="目标：使用Hexo生成静态文件，上传GitHub作为博客。
-搭建环境下载安装node.js  到Node.js官网下载相应平台的最新版本，一路安装即可。
-下载安装Git，创建GitHub账号，上传SSH-KEY。  具体内容参考此博客。  注意: GitHub新建仓库名：github账号.github.io        博客访问地址： http://github账号.github.io
-安装">
+搭建环境
+下载安装node.js
+到Node.js官网下载相应平台的最新版本，一路安装即可。
+下载安装Git，创建GitHub账号，上传SSH-KEY。
+具体内容参考此博客。
+注意: GitHub新建仓库名：github账号.github.io
+博客访问地址： http://github账号.github.io
+安装Hexo
+12$ gi">
 
 
 
@@ -267,13 +285,23 @@
       
 
       
-        <p>  目标：使用Hexo生成静态文件，上传GitHub作为博客。</p>
-<h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><h3 id="下载安装node-js"><a href="#下载安装node-js" class="headerlink" title="下载安装node.js"></a>下载安装node.js</h3><p>  到<a href="https://nodejs.org" target="_blank" rel="external">Node.js</a>官网<a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载</a>相应平台的最新版本，一路安装即可。</p>
-<h3 id="下载安装Git，创建GitHub账号，上传SSH-KEY。"><a href="#下载安装Git，创建GitHub账号，上传SSH-KEY。" class="headerlink" title="下载安装Git，创建GitHub账号，上传SSH-KEY。"></a>下载安装Git，创建GitHub账号，上传SSH-KEY。</h3><p>  具体内容参考<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">此博客</a>。<br>  注意: GitHub新建仓库名：github账号.github.io<br>        博客访问地址： <a href="http://github账号.github.io" target="_blank" rel="external">http://github账号.github.io</a></p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line">$ npm install --unsafe-perm --verbose -g hexo //安装在 \Users\用户名\AppData\Roaming\npm\node_modules目录下</span><br></pre></td></tr></table></figure>
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><h3 id="生成博客文件"><a href="#生成博客文件" class="headerlink" title="生成博客文件"></a>生成博客文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init MyB<span class="built_in">log</span></span><br><span class="line">$ <span class="built_in">cd</span> MyB<span class="built_in">log</span></span><br><span class="line">$ hexo generate //生成静态页面</span><br></pre></td></tr></table></figure>
-<h3 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h3><p>  执行如下命令，启动本地服务，预览文章。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-<p>  在浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>就可以看到效果。</p>
+        <p>目标：使用Hexo生成静态文件，上传GitHub作为博客。</p>
+<h2>搭建环境</h2>
+<h3>下载安装node.js</h3>
+<p>到<a href="https://nodejs.org" target="_blank" rel="external">Node.js</a>官网<a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载</a>相应平台的最新版本，一路安装即可。</p>
+<h3>下载安装Git，创建GitHub账号，上传SSH-KEY。</h3>
+<p>具体内容参考<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">此博客</a>。
+注意: GitHub新建仓库名：github账号.github.io
+博客访问地址： http://github账号.github.io</p>
+<h3>安装Hexo</h3>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line">$ npm install --unsafe-perm --verbose -g hexo //安装在 \Users\用户名\AppData\Roaming\npm\node_modules目录下</span><br></pre></td></tr></table></figure></p>
+<h2>初始化</h2>
+<h3>生成博客文件</h3>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init MyB<span class="built_in">log</span></span><br><span class="line">$ <span class="built_in">cd</span> MyB<span class="built_in">log</span></span><br><span class="line">$ hexo generate //生成静态页面</span><br></pre></td></tr></table></figure></p>
+<h3>本地启动</h3>
+<p>执行如下命令，启动本地服务，预览文章。
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<p>在浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>就可以看到效果。</p>
 
       
     </div>
@@ -379,7 +407,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -412,7 +440,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建环境"><span class="nav-number">1.</span> <span class="nav-text">搭建环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装node-js"><span class="nav-number">1.1.</span> <span class="nav-text">下载安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装Git，创建GitHub账号，上传SSH-KEY。"><span class="nav-number">1.2.</span> <span class="nav-text">下载安装Git，创建GitHub账号，上传SSH-KEY。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化"><span class="nav-number">2.</span> <span class="nav-text">初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成博客文件"><span class="nav-number">2.1.</span> <span class="nav-text">生成博客文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地启动"><span class="nav-number">2.2.</span> <span class="nav-text">本地启动</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">搭建环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">下载安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">下载安装Git，创建GitHub账号，上传SSH-KEY。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">生成博客文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">本地启动</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
