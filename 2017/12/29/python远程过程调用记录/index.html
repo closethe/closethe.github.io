@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="xmlrpc jsonrpc web2py," />
 
 
 
@@ -57,25 +57,31 @@
 
 
 
-<meta name="description" content="目标：使用Hexo生成静态文件，上传GitHub作为博客。
-搭建环境下载安装node.js  到Node.js官网下载相应平台的最新版本，一路安装即可。
-下载安装Git，创建GitHub账号，上传SSH-KEY。  具体内容参考此博客。  注意: GitHub新建仓库名：github账号.github.io        博客访问地址： http://github账号.github.io
-安装">
+<meta name="description" content="##需求现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。123A服务器-&amp;gt;B服务器: 刚刚采集到新鲜热乎的数据一份！Note right of B服务器: 尝一口，扔冰箱里B服务器--&amp;gt;A服务器: 不错！是挺新鲜的！
+##方案
+
+
+方案一、A服务器采集数据后，按照B的需求进行加工处理，扔进B的数据库中。
+方案二、A调用B的处理过">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub上使用Hexo建立博客">
-<meta property="og:url" content="http://closethe.github.io/2016/03/07/GitHub上使用Hexo建立博客/index.html">
+<meta property="og:title" content="python远程过程调用记录">
+<meta property="og:url" content="http://closethe.github.io/2017/12/29/python远程过程调用记录/index.html">
 <meta property="og:site_name" content="一片荒芜">
-<meta property="og:description" content="目标：使用Hexo生成静态文件，上传GitHub作为博客。
-搭建环境下载安装node.js  到Node.js官网下载相应平台的最新版本，一路安装即可。
-下载安装Git，创建GitHub账号，上传SSH-KEY。  具体内容参考此博客。  注意: GitHub新建仓库名：github账号.github.io        博客访问地址： http://github账号.github.io
-安装">
-<meta property="og:updated_time" content="2016-03-07T06:00:37.519Z">
+<meta property="og:description" content="##需求现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。123A服务器-&amp;gt;B服务器: 刚刚采集到新鲜热乎的数据一份！Note right of B服务器: 尝一口，扔冰箱里B服务器--&amp;gt;A服务器: 不错！是挺新鲜的！
+##方案
+
+
+方案一、A服务器采集数据后，按照B的需求进行加工处理，扔进B的数据库中。
+方案二、A调用B的处理过">
+<meta property="og:updated_time" content="2017-12-29T03:28:20.256Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GitHub上使用Hexo建立博客">
-<meta name="twitter:description" content="目标：使用Hexo生成静态文件，上传GitHub作为博客。
-搭建环境下载安装node.js  到Node.js官网下载相应平台的最新版本，一路安装即可。
-下载安装Git，创建GitHub账号，上传SSH-KEY。  具体内容参考此博客。  注意: GitHub新建仓库名：github账号.github.io        博客访问地址： http://github账号.github.io
-安装">
+<meta name="twitter:title" content="python远程过程调用记录">
+<meta name="twitter:description" content="##需求现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。123A服务器-&amp;gt;B服务器: 刚刚采集到新鲜热乎的数据一份！Note right of B服务器: 尝一口，扔冰箱里B服务器--&amp;gt;A服务器: 不错！是挺新鲜的！
+##方案
+
+
+方案一、A服务器采集数据后，按照B的需求进行加工处理，扔进B的数据库中。
+方案二、A调用B的处理过">
 
 
 
@@ -93,7 +99,7 @@
   };
 </script>
 
-  <title> GitHub上使用Hexo建立博客 | 一片荒芜 </title>
+  <title> python远程过程调用记录 | 一片荒芜 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -221,7 +227,7 @@
             
             
               
-                GitHub上使用Hexo建立博客
+                python远程过程调用记录
               
             
           </h1>
@@ -233,8 +239,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-07T13:59:29+08:00" content="2016-03-07">
-              2016-03-07
+            <time itemprop="dateCreated" datetime="2017-12-29T11:23:53+08:00" content="2017-12-29">
+              2017-12-29
             </time>
           </span>
 
@@ -244,8 +250,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/07/GitHub上使用Hexo建立博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/07/GitHub上使用Hexo建立博客/" itemprop="commentsCount"></span>
+                <a href="/2017/12/29/python远程过程调用记录/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/12/29/python远程过程调用记录/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -267,13 +273,30 @@
       
 
       
-        <p>  目标：使用Hexo生成静态文件，上传GitHub作为博客。</p>
-<h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><h3 id="下载安装node-js"><a href="#下载安装node-js" class="headerlink" title="下载安装node.js"></a>下载安装node.js</h3><p>  到<a href="https://nodejs.org" target="_blank" rel="external">Node.js</a>官网<a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载</a>相应平台的最新版本，一路安装即可。</p>
-<h3 id="下载安装Git，创建GitHub账号，上传SSH-KEY。"><a href="#下载安装Git，创建GitHub账号，上传SSH-KEY。" class="headerlink" title="下载安装Git，创建GitHub账号，上传SSH-KEY。"></a>下载安装Git，创建GitHub账号，上传SSH-KEY。</h3><p>  具体内容参考<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">此博客</a>。<br>  注意: GitHub新建仓库名：github账号.github.io<br>        博客访问地址： <a href="http://github账号.github.io" target="_blank" rel="external">http://github账号.github.io</a></p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line">$ npm install --unsafe-perm --verbose -g hexo //安装在 \Users\用户名\AppData\Roaming\npm\node_modules目录下</span><br></pre></td></tr></table></figure>
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><h3 id="生成博客文件"><a href="#生成博客文件" class="headerlink" title="生成博客文件"></a>生成博客文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init MyB<span class="built_in">log</span></span><br><span class="line">$ <span class="built_in">cd</span> MyB<span class="built_in">log</span></span><br><span class="line">$ hexo generate //生成静态页面</span><br></pre></td></tr></table></figure>
-<h3 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h3><p>  执行如下命令，启动本地服务，预览文章。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-<p>  在浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>就可以看到效果。</p>
+        <p>##需求<br>现有的两个web服务器之间需要打通传递数据，A应用采集数据发送给B应用处理，B处理后再存储到自己的数据库。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">A服务器-&gt;B服务器: 刚刚采集到新鲜热乎的数据一份！</span><br><span class="line">Note right of B服务器: 尝一口，扔冰箱里</span><br><span class="line">B服务器--&gt;A服务器: 不错！是挺新鲜的！</span><br></pre></td></tr></table></figure></p>
+<p>##方案</p>
+<blockquote>
+<ul>
+<li>方案一、A服务器采集数据后，按照B的需求进行加工处理，扔进B的数据库中。</li>
+<li>方案二、A调用B的处理过程，B处理完后存入数据库。这就是远程过程调用(RPC)。</li>
+</ul>
+</blockquote>
+<p>方案一将A、B之间的联动转化为A与B数据库的联动。此方案增加了系统间的耦合，降低了系统的稳定性，增加了维护成本，也带来了安全隐患。方案二A、B之间保持了独立性，减少了相互干扰，提升了稳定性。所以这里采用方案二来实现。</p>
+<p>如何使用rpc调用，有两个方面问题:</p>
+<blockquote>
+<ul>
+<li>一、B服务器作为服务提供方，以何种方式提供服务？</li>
+<li>二、A服务器作为调用方，如何调用B所提供的服务？</li>
+</ul>
+</blockquote>
+<p>##web2py解决方案</p>
+<p>###一、服务器解决方案<br>B服务器采用python的web2py作为web服务器框架，在官网我们找到了RPC相关的文档说明，框架提供了多种<a href="http://web2py.com/books/default/chapter/29/10/services#Remote-procedure-calls" target="_blank" rel="external">RPC协议的支持</a>。XMLRPC、JSONRPC、AMFRPC、SOAP等，权衡一下，选择了<a href="http://web2py.com/books/default/chapter/29/10/services#XMLRPC" target="_blank" rel="external">xmlrpc</a>在调用时不需要再引入第三方库，使用会更方便。<br>web2py采用了典型的mvc框架，项目里controls目录下对应了所以页面请求的处理函数。修改对应的control文件并添加下面的代码。例：default.py。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@service.xmlrpc</span></span><br><span class="line"><span class="comment">#RPC服务测试函数 ，注：每一个提供服务的函数需要加上@service.xmlrpc作为修饰符</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line">    </span><br><span class="line"><span class="comment">#开启RPC服务接口</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">call</span><span class="params">()</span>:</span></span><br><span class="line">    session.forget()</span><br><span class="line">    <span class="keyword">return</span> service()</span><br></pre></td></tr></table></figure></p>
+<p>主要工作分两步，1、添加call函数，开启RPC服务支持。2、为提供RPC服务的函数增加@service.xmlrpc修饰符。<br>就是这么简单，服务器端的配置就结束了，这里B服务器开启了add服务，将传入的两个参数相加并返回。</p>
+<p>###二、客户端解决方案<br>工作很简单，引入xmlrpclib包里的ServerProxy类，传入B服务器的url进行初始化，之后按照对象的方式进行调用。下面是客户端的测试代码。<a href="http://127.0.0.1:8000/app/default/call/xmlrpc是B服务器的网络链接地址。" target="_blank" rel="external">http://127.0.0.1:8000/app/default/call/xmlrpc是B服务器的网络链接地址。</a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> xmlrpclib <span class="keyword">import</span> ServerProxy</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>server = ServerProxy(</span><br><span class="line">       <span class="string">'http://127.0.0.1:8000/app/default/call/xmlrpc'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> server.add(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> server.add(<span class="string">'hello'</span>,<span class="string">'world'</span>)</span><br><span class="line"><span class="string">'helloworld'</span></span><br></pre></td></tr></table></figure></p>
+<p>##通用python网络服务解决方案<br>web2py作为web服务框架，对基于http协议实现的rpc服务具有天然的优势，服务器不需要再开启其他的网络服务。然而其他提供没有采用web2py框架的服务器该如何提供RPC服务呢。<br>最近的开发工作中，我们也遇到了这样的问题。此时的B服务器不是web服务器。</p>
+<p>###一、服务器解决方案<br>考虑到之前采用了xmlrpc实现远程过程调用，具有了一定的经验，功能上也满足了我们的需求，所以采用搭建xmlrpc服务的方式进行。<br>在B服务器中添加下面的代码，使用多进程的方式，开启xmlrpc服务器，并绑定到服务器的8088端口。<br>这里也是提供了add函数作为服务，并返回两个参数相加的接口。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_xmlrpcserver</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">from</span> SimpleXMLRPCServer <span class="keyword">import</span> SimpleXMLRPCServer</span><br><span class="line">    <span class="keyword">from</span> SocketServer <span class="keyword">import</span> ThreadingMixIn</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">ThreadXMLRPCServer</span><span class="params">(ThreadingMixIn, SimpleXMLRPCServer)</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">MyObject</span>:</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(self,a,b)</span>:</span></span><br><span class="line">            <span class="keyword">return</span> a+b</span><br><span class="line"></span><br><span class="line">    obj = MyObject()</span><br><span class="line">    server = ThreadXMLRPCServer((<span class="string">"localhost"</span>, <span class="number">8088</span>), allow_none=<span class="keyword">True</span>)</span><br><span class="line">    server.register_instance(obj)</span><br><span class="line">    server.serve_forever()</span><br><span class="line"><span class="comment">#开启服务器进程</span></span><br><span class="line">Process(target=run_xmlrpcserver, args=tuple([ ])).start()</span><br></pre></td></tr></table></figure></p>
+<p>###二、客户端解决方案<br>这里的代码与web2py解决方案中的一致，注意修改下服务的url即可，具体测试代码如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>server = xmlrpclib.ServerProxy(<span class="string">"http://localhost:8088"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>words = server.add(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>words</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure></p>
+<p>##总结<br>最近记性越来越差了，以后要多记录写才好。</p>
 
       
     </div>
@@ -286,18 +309,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/xmlrpc-jsonrpc-web2py/" rel="tag">#xmlrpc jsonrpc web2py</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/11/周杰伦215首歌曲高清下载地址/" rel="next" title="周杰伦215首歌曲高清下载地址">
+                <i class="fa fa-chevron-left"></i> 周杰伦215首歌曲高清下载地址
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/07/python抓取豆瓣热门电影/" rel="prev" title="python抓取豆瓣热门电影">
-                python抓取豆瓣热门电影 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -323,8 +352,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/07/GitHub上使用Hexo建立博客/"
-           data-title="GitHub上使用Hexo建立博客" data-url="http://closethe.github.io/2016/03/07/GitHub上使用Hexo建立博客/">
+      <div class="ds-thread" data-thread-key="2017/12/29/python远程过程调用记录/"
+           data-title="python远程过程调用记录" data-url="http://closethe.github.io/2017/12/29/python远程过程调用记录/">
       </div>
     
   </div>
@@ -412,7 +441,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建环境"><span class="nav-number">1.</span> <span class="nav-text">搭建环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装node-js"><span class="nav-number">1.1.</span> <span class="nav-text">下载安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装Git，创建GitHub账号，上传SSH-KEY。"><span class="nav-number">1.2.</span> <span class="nav-text">下载安装Git，创建GitHub账号，上传SSH-KEY。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化"><span class="nav-number">2.</span> <span class="nav-text">初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成博客文件"><span class="nav-number">2.1.</span> <span class="nav-text">生成博客文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地启动"><span class="nav-number">2.2.</span> <span class="nav-text">本地启动</span></a></li></ol></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
