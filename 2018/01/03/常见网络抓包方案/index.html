@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="抓包,Fiddler,wireshark,tcpdump," />
 
 
 
@@ -57,43 +57,22 @@
 
 
 
-<meta name="description" content="目标：使用Hexo生成静态文件，上传GitHub作为博客。
-搭建环境
-下载安装node.js
-到Node.js官网下载相应平台的最新版本，一路安装即可。
-下载安装Git，创建GitHub账号，上传SSH-KEY。
-具体内容参考此博客。
-注意: GitHub新建仓库名：github账号.github.io
-博客访问地址： http://github账号.github.io
-安装Hexo
-12$ gi">
+<meta name="description" content="背景
+抓包作为一项基本技能，不论开发调试还是破解研究都作用广泛。PC端使用wireshark、omnipeek作为基本的协议分析软件，如果是web协议分析可以使用Fiddler，当然从安全角度出发还有更强大的Burpsuite。
+随着智能手机的普及，H5的发展壮大，越来越多的应用软件开始采用HybridApp方式。这当然就包括了大名鼎鼎的淘宝，还有“臭名昭著”的北京交警APP（每次凌晨两点起来办进">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub上使用Hexo建立博客">
-<meta property="og:url" content="http://closethe.github.io/2016/03/07/GitHub上使用Hexo建立博客/index.html">
+<meta property="og:title" content="常见网络抓包方案">
+<meta property="og:url" content="http://closethe.github.io/2018/01/03/常见网络抓包方案/index.html">
 <meta property="og:site_name" content="乾坤袋">
-<meta property="og:description" content="目标：使用Hexo生成静态文件，上传GitHub作为博客。
-搭建环境
-下载安装node.js
-到Node.js官网下载相应平台的最新版本，一路安装即可。
-下载安装Git，创建GitHub账号，上传SSH-KEY。
-具体内容参考此博客。
-注意: GitHub新建仓库名：github账号.github.io
-博客访问地址： http://github账号.github.io
-安装Hexo
-12$ gi">
-<meta property="og:updated_time" content="2016-03-07T06:00:37.519Z">
+<meta property="og:description" content="背景
+抓包作为一项基本技能，不论开发调试还是破解研究都作用广泛。PC端使用wireshark、omnipeek作为基本的协议分析软件，如果是web协议分析可以使用Fiddler，当然从安全角度出发还有更强大的Burpsuite。
+随着智能手机的普及，H5的发展壮大，越来越多的应用软件开始采用HybridApp方式。这当然就包括了大名鼎鼎的淘宝，还有“臭名昭著”的北京交警APP（每次凌晨两点起来办进">
+<meta property="og:updated_time" content="2018-01-03T02:09:13.069Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GitHub上使用Hexo建立博客">
-<meta name="twitter:description" content="目标：使用Hexo生成静态文件，上传GitHub作为博客。
-搭建环境
-下载安装node.js
-到Node.js官网下载相应平台的最新版本，一路安装即可。
-下载安装Git，创建GitHub账号，上传SSH-KEY。
-具体内容参考此博客。
-注意: GitHub新建仓库名：github账号.github.io
-博客访问地址： http://github账号.github.io
-安装Hexo
-12$ gi">
+<meta name="twitter:title" content="常见网络抓包方案">
+<meta name="twitter:description" content="背景
+抓包作为一项基本技能，不论开发调试还是破解研究都作用广泛。PC端使用wireshark、omnipeek作为基本的协议分析软件，如果是web协议分析可以使用Fiddler，当然从安全角度出发还有更强大的Burpsuite。
+随着智能手机的普及，H5的发展壮大，越来越多的应用软件开始采用HybridApp方式。这当然就包括了大名鼎鼎的淘宝，还有“臭名昭著”的北京交警APP（每次凌晨两点起来办进">
 
 
 
@@ -111,7 +90,7 @@
   };
 </script>
 
-  <title> GitHub上使用Hexo建立博客 | 乾坤袋 </title>
+  <title> 常见网络抓包方案 | 乾坤袋 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -239,7 +218,7 @@
             
             
               
-                GitHub上使用Hexo建立博客
+                常见网络抓包方案
               
             
           </h1>
@@ -251,8 +230,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-07T13:59:29+08:00" content="2016-03-07">
-              2016-03-07
+            <time itemprop="dateCreated" datetime="2018-01-03T10:07:24+08:00" content="2018-01-03">
+              2018-01-03
             </time>
           </span>
 
@@ -262,8 +241,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/07/GitHub上使用Hexo建立博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/07/GitHub上使用Hexo建立博客/" itemprop="commentsCount"></span>
+                <a href="/2018/01/03/常见网络抓包方案/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/03/常见网络抓包方案/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -285,23 +264,48 @@
       
 
       
-        <p>目标：使用Hexo生成静态文件，上传GitHub作为博客。</p>
-<h2>搭建环境</h2>
-<h3>下载安装node.js</h3>
-<p>到<a href="https://nodejs.org" target="_blank" rel="external">Node.js</a>官网<a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载</a>相应平台的最新版本，一路安装即可。</p>
-<h3>下载安装Git，创建GitHub账号，上传SSH-KEY。</h3>
-<p>具体内容参考<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">此博客</a>。
-注意: GitHub新建仓库名：github账号.github.io
-博客访问地址： http://github账号.github.io</p>
-<h3>安装Hexo</h3>
-<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line">$ npm install --unsafe-perm --verbose -g hexo //安装在 \Users\用户名\AppData\Roaming\npm\node_modules目录下</span><br></pre></td></tr></table></figure></p>
-<h2>初始化</h2>
-<h3>生成博客文件</h3>
-<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init MyB<span class="built_in">log</span></span><br><span class="line">$ <span class="built_in">cd</span> MyB<span class="built_in">log</span></span><br><span class="line">$ hexo generate //生成静态页面</span><br></pre></td></tr></table></figure></p>
-<h3>本地启动</h3>
-<p>执行如下命令，启动本地服务，预览文章。
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-<p>在浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>就可以看到效果。</p>
+        <h2>背景</h2>
+<p>抓包作为一项基本技能，不论开发调试还是破解研究都作用广泛。PC端使用wireshark、omnipeek作为基本的协议分析软件，如果是web协议分析可以使用Fiddler，当然从安全角度出发还有更强大的Burpsuite。
+随着智能手机的普及，H5的发展壮大，越来越多的应用软件开始采用HybridApp方式。这当然就包括了大名鼎鼎的淘宝，还有“臭名昭著”的北京交警APP（每次凌晨两点起来办进京证都要暗暗的骂上一句）。现在日益茁壮的微信小程序、刚上幼儿园的微信小游戏也使用了相关的技术。对他们的研究分析自然少不了抓包了。</p>
+<hr>
+<h2>问题</h2>
+<p>PC抓包已经是很古老的技艺了，在此就不多赘述了。智能手机抓包有没有什么好的解决方案呢？
+（只用过安卓手机，这里就不讨论苹果手机了）</p>
+<hr>
+<h2>抓原始数据</h2>
+<h3>1、tcpdump抓包 （所有数据包  需要root）</h3>
+<p>此方案需要root，下载tcpdump程序，复制到手机目录下，修改运行权限并进行抓包。
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcpdump -p -vv -s 0 -w /sdcard/capture.pcap</span><br></pre></td></tr></table></figure></p>
+<p>之后使用adb pull将文件抓取到电脑上使用wireshark进行分析。</p>
+<h3>2、局域网抓包 (所有数据包  不需要root)</h3>
+<p>靶机与抓包机部署在同一个局域网内，抓包机网卡设置为混杂模式进行抓包。</p>
+<hr>
+<h2>抓http/https数据</h2>
+<h3>1、Packet Capture之类 模拟vpn通道  (手机本地抓取)</h3>
+<p>通过安卓提供的VpnService，模拟中间人攻击，汇集所有手机流量进行抓包记录。并将抓取的网络数据存储到本地。</p>
+<h3>2、网络代理抓包 (Fiddler、Burpsuite)</h3>
+<p>这里以Fiddler为例，Burpsuite类似的设置。主要的使用流程分为以下几步：</p>
+<blockquote>
+<ul>
+<li>电脑端安装设置代理软件</li>
+<li>手机端连接代理并安装证书</li>
+<li>手机端使用待分析软件或访问网络</li>
+<li>电脑端分析数据</li>
+</ul>
+</blockquote>
+<p>具体使用步骤如下：</p>
+<blockquote>
+<p>1、 下载最新版 Fiddler 并进行安装。
+2、 安装完成后点击 Tools-&gt;Option进行设置,
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">https标签：</span><br><span class="line">    - [x] Capture HTTPS CONNECTS</span><br><span class="line">    - [x] Decrypt HTTPS traffic</span><br><span class="line">connections标签：</span><br><span class="line">    - [x] Allow romote computers to connect</span><br><span class="line">```  </span><br><span class="line">&gt; 3、 记录当前电脑的IP地址为IP_PC</span><br><span class="line">&gt; 4、 手机端连接局域网，并设置代理地址为IP_PC，端口：8888</span><br><span class="line">&gt; 5、 打开浏览器，访问地址http://IP_PC:8888，在打开的页面中下载fiddler的CA证书并进行安装。</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>也可以将证书下载到手机存储卡，之后使用 设置-&gt;系统安全-&gt;从存储设备安装 进行证书安装 (小米6 开发版)。</p>
+<pre><code>&gt; 6、 打开应用进行操作，即可在电脑上看到对应的http/https数据包。
+
+## 总结
+
+第一次手机抓HTTPS包遇到了很多问题，后来都逐个解决了。现在回想起来，这些问题已经忘光了。
+嗯 就是这样。</code></pre>
 
       
     </div>
@@ -314,18 +318,30 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/抓包/" rel="tag">#抓包</a>
+          
+            <a href="/tags/Fiddler/" rel="tag">#Fiddler</a>
+          
+            <a href="/tags/wireshark/" rel="tag">#wireshark</a>
+          
+            <a href="/tags/tcpdump/" rel="tag">#tcpdump</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/12/29/python远程过程调用记录/" rel="next" title="python远程过程调用记录">
+                <i class="fa fa-chevron-left"></i> python远程过程调用记录
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/07/python抓取豆瓣热门电影/" rel="prev" title="python抓取豆瓣热门电影">
-                python抓取豆瓣热门电影 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -351,8 +367,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/07/GitHub上使用Hexo建立博客/"
-           data-title="GitHub上使用Hexo建立博客" data-url="http://closethe.github.io/2016/03/07/GitHub上使用Hexo建立博客/">
+      <div class="ds-thread" data-thread-key="2018/01/03/常见网络抓包方案/"
+           data-title="常见网络抓包方案" data-url="http://closethe.github.io/2018/01/03/常见网络抓包方案/">
       </div>
     
   </div>
@@ -440,7 +456,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">搭建环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">下载安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">下载安装Git，创建GitHub账号，上传SSH-KEY。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">生成博客文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">本地启动</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">抓原始数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">1、tcpdump抓包 （所有数据包  需要root）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">2、局域网抓包 (所有数据包  不需要root)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">抓http/https数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.1.</span> <span class="nav-text">1、Packet Capture之类 模拟vpn通道  (手机本地抓取)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.2.</span> <span class="nav-text">2、网络代理抓包 (Fiddler、Burpsuite)</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
