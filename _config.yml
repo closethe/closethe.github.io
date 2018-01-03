@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 一片荒芜
+title: 乾坤袋
 subtitle: 如果能跟onenote打通就好.
 description: 网络协议分析、爬虫、python、TensorFlow，以及各种让我痴迷的新技术。
 author: 九天
@@ -67,6 +67,16 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+  
+sequence:
+  webfont: https://bramp.github.io/js-sequence-diagrams/js/webfont.js
+  snap: https://bramp.github.io/js-sequence-diagrams/js/snap.svg-min.js
+  underscore: https://bramp.github.io/js-sequence-diagrams/js/underscore-min.js
+  sequence: https://bramp.github.io/js-sequence-diagrams/js/sequence-diagram-min.js
+  css: # optional, the url for css, such as hand drawn theme 
+  options: 
+    theme: simple
+    css_class: 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
