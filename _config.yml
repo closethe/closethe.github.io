@@ -13,6 +13,13 @@ avatar: https://avatars0.githubusercontent.com/u/8065436?v=3&u=7d0f2353e09344c8f
 duoshuo_shortname: closethe
 baidu_analytics: 2b87d502f8e3c62d1017959c53c2c8c1
 
+# Social links
+social:
+  Github: https://github.com/closethe
+  #Weibo: http://weibo.com/
+  Email: mailto:406226143@qq.com
+  # zhihu: http://www.zhihu.com/people/your-user-name
+  
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://closethe.github.io
@@ -63,6 +70,10 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
+plugins:
+baidusitemap: # 需要安装插件 npm install hexo-generator-baidu-sitemap@0.1.1 --save
+  path: baidusitemap.xml
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -84,3 +95,23 @@ deploy:
   type: git
   repo: git@github.com:closethe/closethe.github.io.git
   branch: master
+
+# ---------------下面选项需要对应插件的支持---------------
+# npm install hexo-generator-index --save
+# npm install hexo-generator-archive --save
+# npm install hexo-generator-category --save
+# npm install hexo-generator-tag --save
+
+index_generator:
+  per_page: 10 ##首页默认10篇文章标题 如果值为0不分页
+
+archive_generator:
+  per_page: 20 ##归档页面默认20篇文章标题
+  yearly: true  ##生成年视图
+  monthly: true ##生成月视图
+
+tag_generator:
+  per_page: 10 ##标签分类页面默认10篇文章
+
+category_generator:
+  per_page: 10 ###分类页面默认10篇文章
