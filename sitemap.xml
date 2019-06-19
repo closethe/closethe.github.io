@@ -1,109 +1,448 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
+    
+  <url>
+    <loc>http://closethe.github.io/2019/05/25/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%B7%A5%E7%A8%8B%E5%B8%88%E8%80%83%E8%AF%95/</loc>
+    <lastmod>2019-06-19T08:02:15.673Z</lastmod>
+    <data>
+        <display>
+        <title>信息安全工程师考试</title>
+        <pubTime>2019-05-25T07:29:47.000Z</pubTime>
+        
+        <tag>信息安全工程师 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2019/04/29/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%A4%87%E8%80%83%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+    <lastmod>2019-06-19T07:29:25.898Z</lastmod>
+    <data>
+        <display>
+        <title>信息安全工程师备考知识点</title>
+        <pubTime>2019-04-29T07:15:55.000Z</pubTime>
+        
+        <tag>信息安全工程师，鉴别，审计 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2017/08/22/%E6%8B%BC%E4%BA%86%E5%8F%B0%E4%B8%BB%E6%9C%BA%EF%BC%8C%E7%BE%8E%E6%BB%8B%E6%BB%8B/</loc>
+    <lastmod>2019-06-19T07:13:15.532Z</lastmod>
+    <data>
+        <display>
+        <title>拼了台主机，美滋滋</title>
+        <pubTime>2017-08-22T06:58:34.000Z</pubTime>
+        
+        <tag>美滋滋 </tag>
+         
+        <tag>吃鸡 </tag>
+         
+        <tag>1066 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2016/12/02/%E5%BE%AE%E4%BF%A1%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95/</loc>
+    <lastmod>2019-06-19T06:55:03.476Z</lastmod>
+    <data>
+        <display>
+        <title>微信第三方登录</title>
+        <pubTime>2016-12-02T06:44:05.000Z</pubTime>
+        
+        <tag>python </tag>
+         
+        <tag>微信 </tag>
+         
+        <tag>服务号 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2018/11/13/ubuntu%E5%AE%89%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/</loc>
+    <lastmod>2019-06-19T06:41:48.568Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu安装后要做的事</title>
+        <pubTime>2018-11-13T06:37:53.000Z</pubTime>
+        
+        <tag>ubuntu </tag>
+         
+        <tag>wps </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2018/11/12/%E8%80%81%E7%94%B5%E8%84%91%E8%A3%85ubuntu/</loc>
+    <lastmod>2019-06-19T06:35:38.304Z</lastmod>
+    <data>
+        <display>
+        <title>不支持uefi的老电脑装ubuntu</title>
+        <pubTime>2018-11-12T06:11:45.000Z</pubTime>
+        
+        <tag>ubuntu </tag>
+         
+        <tag>linux </tag>
+         
+        <tag>安装 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2018/03/07/redis%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2019-06-19T06:09:56.496Z</lastmod>
+    <data>
+        <display>
+        <title>redis简单使用</title>
+        <pubTime>2018-03-07T05:57:10.000Z</pubTime>
+        
+        <tag>python </tag>
+         
+        <tag>redis </tag>
+         
+        <tag>序列化 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2017/12/20/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%A7%81%E6%9C%89%E9%93%BE%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2019-06-19T05:55:48.161Z</lastmod>
+    <data>
+        <display>
+        <title>以太坊私有链搭建</title>
+        <pubTime>2017-12-20T05:45:44.000Z</pubTime>
+        
+        <tag>以太坊 </tag>
+         
+        <tag>区块链 </tag>
+         
+        <tag>搭建 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2018/03/19/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E7%9F%AD%E4%BF%A1%E5%B9%B3%E5%8F%B0%E6%8E%A5%E5%8F%A3%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2019-06-19T05:44:52.750Z</lastmod>
+    <data>
+        <display>
+        <title>清华大学短信平台接口使用</title>
+        <pubTime>2018-03-19T05:30:08.000Z</pubTime>
+        
+        <tag>python </tag>
+         
+        <tag>web2py </tag>
+         
+        <tag>sms </tag>
+         
+        <tag>requests </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>http://closethe.github.io/2017/02/03/hadoop%E9%9B%86%E7%BE%A4%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
-    
     <lastmod>2019-06-19T05:22:24.862Z</lastmod>
+    <data>
+        <display>
+        <title>hadoop集群环境搭建</title>
+        <pubTime>2017-02-03T02:25:04.000Z</pubTime>
+        
+        <tag>hadoop </tag>
+         
+        <tag>集群 </tag>
+         
+        <tag>环境搭建 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2017/07/13/ajax%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/</loc>
-    
     <lastmod>2019-06-19T03:56:09.233Z</lastmod>
+    <data>
+        <display>
+        <title>ajax接口测试方法</title>
+        <pubTime>2017-07-13T03:45:45.000Z</pubTime>
+        
+        <tag>js </tag>
+         
+        <tag>jquery </tag>
+         
+        <tag>ajax </tag>
+         
+        <tag>测试 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2018/03/16/%E5%AF%BC%E5%87%BAexcel%E6%96%87%E4%BB%B6%E5%AE%9E%E7%8E%B0/</loc>
-    
     <lastmod>2019-06-19T03:44:44.392Z</lastmod>
+    <data>
+        <display>
+        <title>web2py导出excel文件实现</title>
+        <pubTime>2018-03-16T03:27:04.000Z</pubTime>
+        
+        <tag>python </tag>
+         
+        <tag>web2py </tag>
+         
+        <tag>excel </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2016/06/19/cx-Oracle%E5%BA%93%E4%BD%BF%E7%94%A8/</loc>
-    
     <lastmod>2019-06-19T03:25:42.233Z</lastmod>
+    <data>
+        <display>
+        <title>cx_Oracle库使用</title>
+        <pubTime>2016-06-19T03:22:12.000Z</pubTime>
+        
+        <tag>oracle </tag>
+         
+        <tag>python </tag>
+         
+        <tag>web2py </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2017/06/19/mongodb%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C%E7%AC%94%E8%AE%B0/</loc>
-    
     <lastmod>2019-06-19T03:20:54.227Z</lastmod>
+    <data>
+        <display>
+        <title>mongodb简单操作笔记</title>
+        <pubTime>2017-06-19T03:17:07.000Z</pubTime>
+        
+        <tag>python </tag>
+         
+        <tag>mongodb </tag>
+         
+        <tag>部署 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2017/05/10/mysql%E7%BB%BF%E8%89%B2%E7%89%88%E9%85%8D%E7%BD%AE/</loc>
-    
     <lastmod>2019-06-19T03:16:03.553Z</lastmod>
+    <data>
+        <display>
+        <title>mysql绿色版配置</title>
+        <pubTime>2017-05-10T03:13:03.000Z</pubTime>
+        
+        <tag>mysq </tag>
+         
+        <tag>绿色 </tag>
+         
+        <tag>win </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2017/03/19/spark%E9%9B%86%E7%BE%A4%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
-    
     <lastmod>2019-06-19T03:11:47.484Z</lastmod>
+    <data>
+        <display>
+        <title>spark集群环境搭建</title>
+        <pubTime>2017-03-19T03:04:40.000Z</pubTime>
+        
+        <tag>集群 </tag>
+         
+        <tag>环境搭建 </tag>
+         
+        <tag>spark </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2017/11/17/%E8%81%94%E9%80%9AIPTV-ZTEB860AV1-2-ADB%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</loc>
-    
     <lastmod>2019-06-19T02:16:00.865Z</lastmod>
+    <data>
+        <display>
+        <title>联通IPTV ZTEB860AV1.2 ADB密码计算</title>
+        <pubTime>2017-11-17T01:37:31.000Z</pubTime>
+        
+        <tag>iptv </tag>
+         
+        <tag>adb </tag>
+         
+        <tag>破解 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
-  <url>
-    <loc>http://closethe.github.io/baidu_verify_n6WB0Fmeh8.html</loc>
     
-    <lastmod>2018-01-03T04:27:55.019Z</lastmod>
-    
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2018/01/03/%E5%B8%B8%E8%A7%81%E7%BD%91%E7%BB%9C%E6%8A%93%E5%8C%85%E6%96%B9%E6%A1%88/</loc>
-    
     <lastmod>2018-01-03T02:09:13.069Z</lastmod>
+    <data>
+        <display>
+        <title>常见网络抓包方案</title>
+        <pubTime>2018-01-03T02:07:24.000Z</pubTime>
+        
+        <tag>抓包 </tag>
+         
+        <tag>Fiddler </tag>
+         
+        <tag>wireshark </tag>
+         
+        <tag>tcpdump </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2017/12/29/python%E8%BF%9C%E7%A8%8B%E8%BF%87%E7%A8%8B%E8%B0%83%E7%94%A8%E8%AE%B0%E5%BD%95/</loc>
-    
     <lastmod>2017-12-29T09:35:11.082Z</lastmod>
+    <data>
+        <display>
+        <title>python远程过程调用记录</title>
+        <pubTime>2017-12-29T03:23:53.000Z</pubTime>
+        
+        <tag>web2py </tag>
+         
+        <tag>xmlrpc </tag>
+         
+        <tag>jsonrpc </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
-  <url>
-    <loc>http://closethe.github.io/tags/index.html</loc>
     
-    <lastmod>2017-12-29T06:19:14.281Z</lastmod>
-    
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2016/03/11/%E5%91%A8%E6%9D%B0%E4%BC%A6215%E9%A6%96%E6%AD%8C%E6%9B%B2%E9%AB%98%E6%B8%85%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</loc>
-    
     <lastmod>2016-03-11T07:46:50.902Z</lastmod>
+    <data>
+        <display>
+        <title>周杰伦215首歌曲高清下载地址</title>
+        <pubTime>2016-03-11T06:58:50.000Z</pubTime>
+        
+        <tag>爬虫 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2016/03/07/python%E6%8A%93%E5%8F%96%E8%B1%86%E7%93%A3%E7%83%AD%E9%97%A8%E7%94%B5%E5%BD%B1/</loc>
-    
     <lastmod>2016-03-07T06:25:13.773Z</lastmod>
+    <data>
+        <display>
+        <title>python抓取豆瓣热门电影</title>
+        <pubTime>2016-03-07T05:59:39.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
     
-  </url>
-  
   <url>
     <loc>http://closethe.github.io/2016/03/07/GitHub%E4%B8%8A%E4%BD%BF%E7%94%A8Hexo%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2/</loc>
-    
     <lastmod>2016-03-07T06:00:37.519Z</lastmod>
-    
-  </url>
-  
+    <data>
+        <display>
+        <title>GitHub上使用Hexo建立博客</title>
+        <pubTime>2016-03-07T05:59:29.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
 </urlset>
