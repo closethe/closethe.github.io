@@ -3,6 +3,246 @@
 
     
   <url>
+    <loc>http://closethe.github.io/2019/06/28/%E5%B0%8F%E7%B1%B36kernel%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2019-06-28T10:58:09.547Z</lastmod>
+    <data>
+        <display>
+        <title>小米6kernel源码编译</title>
+        <pubTime>2019-06-28T08:18:15.000Z</pubTime>
+        
+        <tag>kernel </tag>
+         
+        <tag>编译 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2019/06/25/%E6%89%93%E5%BC%80coredump%E5%B9%B6%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E7%94%9F%E6%88%90%E8%B7%AF%E5%BE%84/</loc>
+    <lastmod>2019-06-28T07:59:02.862Z</lastmod>
+    <data>
+        <display>
+        <title>打开coredump并修改文件生成路径</title>
+        <pubTime>2019-06-25T02:32:38.000Z</pubTime>
+        
+        <tag>coredump </tag>
+         
+        <tag>gdb </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2018/10/08/ssh%E4%BB%A3%E7%90%86%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2019-06-19T08:37:23.646Z</lastmod>
+    <data>
+        <display>
+        <title>ssh代理搭建</title>
+        <pubTime>2018-10-08T08:19:29.000Z</pubTime>
+        
+        <tag>ssh </tag>
+         
+        <tag>socks5 </tag>
+         
+        <tag>代理 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2019/05/25/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%B7%A5%E7%A8%8B%E5%B8%88%E8%80%83%E8%AF%95/</loc>
+    <lastmod>2019-06-19T08:02:15.673Z</lastmod>
+    <data>
+        <display>
+        <title>信息安全工程师考试</title>
+        <pubTime>2019-05-25T07:29:47.000Z</pubTime>
+        
+        <tag>信息安全工程师 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2019/04/29/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%A4%87%E8%80%83%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+    <lastmod>2019-06-19T07:29:25.898Z</lastmod>
+    <data>
+        <display>
+        <title>信息安全工程师备考知识点</title>
+        <pubTime>2019-04-29T07:15:55.000Z</pubTime>
+        
+        <tag>信息安全工程师，鉴别，审计 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2017/08/22/%E6%8B%BC%E4%BA%86%E5%8F%B0%E4%B8%BB%E6%9C%BA%EF%BC%8C%E7%BE%8E%E6%BB%8B%E6%BB%8B/</loc>
+    <lastmod>2019-06-19T07:13:15.532Z</lastmod>
+    <data>
+        <display>
+        <title>拼了台主机，美滋滋</title>
+        <pubTime>2017-08-22T06:58:34.000Z</pubTime>
+        
+        <tag>美滋滋 </tag>
+         
+        <tag>吃鸡 </tag>
+         
+        <tag>1066 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2016/12/02/%E5%BE%AE%E4%BF%A1%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95/</loc>
+    <lastmod>2019-06-19T06:55:03.476Z</lastmod>
+    <data>
+        <display>
+        <title>微信第三方登录</title>
+        <pubTime>2016-12-02T06:44:05.000Z</pubTime>
+        
+        <tag>python </tag>
+         
+        <tag>微信 </tag>
+         
+        <tag>服务号 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2018/11/13/ubuntu%E5%AE%89%E8%A3%85%E5%90%8E%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/</loc>
+    <lastmod>2019-06-19T06:41:48.568Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu安装后要做的事</title>
+        <pubTime>2018-11-13T06:37:53.000Z</pubTime>
+        
+        <tag>ubuntu </tag>
+         
+        <tag>wps </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2018/11/12/%E8%80%81%E7%94%B5%E8%84%91%E8%A3%85ubuntu/</loc>
+    <lastmod>2019-06-19T06:35:38.304Z</lastmod>
+    <data>
+        <display>
+        <title>不支持uefi的老电脑装ubuntu</title>
+        <pubTime>2018-11-12T06:11:45.000Z</pubTime>
+        
+        <tag>ubuntu </tag>
+         
+        <tag>linux </tag>
+         
+        <tag>安装 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2018/03/07/redis%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2019-06-19T06:09:56.496Z</lastmod>
+    <data>
+        <display>
+        <title>redis简单使用</title>
+        <pubTime>2018-03-07T05:57:10.000Z</pubTime>
+        
+        <tag>python </tag>
+         
+        <tag>redis </tag>
+         
+        <tag>序列化 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2017/12/20/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%A7%81%E6%9C%89%E9%93%BE%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2019-06-19T05:55:48.161Z</lastmod>
+    <data>
+        <display>
+        <title>以太坊私有链搭建</title>
+        <pubTime>2017-12-20T05:45:44.000Z</pubTime>
+        
+        <tag>以太坊 </tag>
+         
+        <tag>区块链 </tag>
+         
+        <tag>搭建 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://closethe.github.io/2018/03/19/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E7%9F%AD%E4%BF%A1%E5%B9%B3%E5%8F%B0%E6%8E%A5%E5%8F%A3%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2019-06-19T05:44:52.750Z</lastmod>
+    <data>
+        <display>
+        <title>清华大学短信平台接口使用</title>
+        <pubTime>2018-03-19T05:30:08.000Z</pubTime>
+        
+        <tag>python </tag>
+         
+        <tag>web2py </tag>
+         
+        <tag>sms </tag>
+         
+        <tag>requests </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://closethe.github.io/2017/02/03/hadoop%E9%9B%86%E7%BE%A4%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2019-06-19T05:22:24.862Z</lastmod>
     <data>
